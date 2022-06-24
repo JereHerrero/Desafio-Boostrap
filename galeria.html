@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/boostrap/bootstrap.min.css">
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Fuentes -->
@@ -13,9 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <!-- Hoja de estilos CSS-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
 </head>
 
 <!-- Comienza body -->
@@ -24,19 +26,34 @@
 
     <!-- Comienza header -->
     <header>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <img class="logo" src="img/logo.png" width="70px" height="50px" alt="Logo Monumental">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="bar&rest.html">Bar&Rest</a></li>
-                <li><a class="active" href="galeria.html">Galeria</a></li>
-                <li><a href="nosotros.html">¿Quienes Somos?</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg_nav-oscuro">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" width="70px" height="50px" alt="Logo Monumental">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bar&rest.html">Bar&Rest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="galeria.html">Galeria <span class="sr-only">(current)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">¿Quienes Somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -46,35 +63,63 @@
             <h1>Vea nuestro hotel y nuestros servicios</h1>
         </div>
 
-        <section>
-            <div class="galeria_text">
-                <h2>Galería</h2>
-                <h3>Vea nuestro hotel y nuestros servicios</h3>
-                <p class="text_center">Entre los hoteles en Buenos Aires, Argentina, ningún destino reúne estilo, servicios y comodidades en
-                    una
-                    ubicación céntrica como el Hotel Monumental. Con instalaciones que van desde un moderno gimnasio con
-                    piscina
-                    cubierta hasta ocho sofisticadas salas de reuniones y un centro de negocios, hasta el restaurante La
-                    Pergola
-                    y Maximilian Lobby Bar & Restaurante, somos la opción ideal para estandías de negocios o de placer
-                    en La
-                    bulliciosa capital argentina. Consulte nuestra galería de fotos para obtener más información sobre
-                    las
-                    características y las instalaciones del hotel.</p>
+        <div class="galeria_text">
+            <h2>Galería</h2>
+            <h3>Vea nuestro hotel y nuestros servicios</h3>
+            <p class="text_center">Entre los hoteles en Buenos Aires, Argentina, ningún destino reúne estilo,
+                servicios y comodidades en
+                una
+                ubicación céntrica como el Hotel Monumental. Con instalaciones que van desde un moderno gimnasio con
+                piscina
+                cubierta hasta ocho sofisticadas salas de reuniones y un centro de negocios, hasta el restaurante La
+                Pergola
+                y Maximilian Lobby Bar & Restaurante, somos la opción ideal para estandías de negocios o de placer
+                en La
+                bulliciosa capital argentina. Consulte nuestra galería de fotos para obtener más información sobre
+                las
+                características y las instalaciones del hotel.</p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div id="carouselExampleControls" class="carousel slide col-sm-12 mb-5" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/galeria1.png" class="d-block w-100" alt="Lobby del Hotel">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/galeria2.png" class="d-block w-100" alt="Comedor del Hotel">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/galeria3.png" class="d-block w-100" alt="Comedor del Hotel">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/galeria4.png" class="d-block w-100" alt="Bar del Hotel">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/galeria5.png" class="d-block w-100" alt="Salon de Eventos del Hotel">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </button>
+                </div>
             </div>
-            <!-- Futuro Carrusel de imagenes -->
-            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="galeria_img">
-                <img src="img/galeria1.png" alt="habitacion">
-                <img src="img/galeria2.png" alt="habitacion suite">
-                <img src="img/galeria3.png" alt="habitacion suite">
-            </div>
-        </section>
+        </div>
+
     </main>
 
     <!-- Comienza Footer -->
 
     <footer>
-        <img src="img/logo.png" alt="logo" class="footer_logo" />
+        <img src="assets/img/logo.png" alt="logo" class="footer_logo" />
         <div class="footer_redes">
             <p>Seguinos en nuestras redes</p>
             <a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-instagram"></a>
@@ -85,13 +130,18 @@
 
     <!-- Comienza Scripts -->
 
+    <!-- Bootstrap -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/fb468ee517.js" crossorigin="anonymous"></script>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-    AOS.init();
+        AOS.init();
     </script>
 
 </body>

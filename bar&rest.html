@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/boostrap/bootstrap.min.css">
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Fuentes -->
@@ -13,9 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <!-- Hoja de estilos CSS-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
 </head>
 
 <!-- Comienza body -->
@@ -24,30 +26,45 @@
 
     <!-- Comienza header -->
     <header>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <img class="logo" src="img/logo.png" width="70px" height="50px" alt="Logo Monumental">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a class="active" href="bar&rest.html">Bar&Rest</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="nosotros.html">¿Quienes Somos?</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg_nav-oscuro">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" width="70px" height="50px" alt="Logo Monumental">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="bar&rest.html">Bar&Rest <span class="sr-only">(current)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">¿Quienes Somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <!-- Comienza Main -->
     <main>
-        <div id="portada_bar-rest">
+        <div class="portada_bar-rest">
             <h1>Nuestras instalaciones</h1>
         </div>
 
         <section>
-            <div id="textos_bar-rest">
+            <div class="textos_bar-rest">
                 <h2>Restaurantes & Bares</h2>
                 <h3>¡Encuentre algunos de los mejores restaurantes de Buenos Aires, aquí mismo!</h3>
                 <div></div>
@@ -74,19 +91,17 @@
                         habitación o
                         suite, el servicio de habitaciones está disponible las 24 horas.</p>
                 </div>
-                <div id="boton_menu">
-                    <a href="#" target="_blank">Menu</a>
-                </div>
+                <button type="button" class="btn btn-dark mt-5 mb-5">MENU</button>
             </div>
-            <div id="bar_img">
-                <div id="bar_descripcion">
-                    <img src="img/maximilian.png" alt="Maximilian Lobby Bar y Restaurante">
+            <div class="bar_img">
+                <div class="bar_descripcion">
+                    <img src="assets/img/maximilian.png" alt="Maximilian Lobby Bar y Restaurante">
                     <h3>MAXIMILIAN LOBBY BAR & RESTAURANTE</h3>
                     <P>Ubicado en nuestro lobby, es lujoso, espacioso y de estilo moderno. Un menú a la carta está
                         disponible para el almuerzo y la cena.</P>
                 </div>
-                <div id="restaurante_descripcion">
-                    <img src="img/pergola.png" alt="Restaurante La Pergola">
+                <div class="restaurante_descripcion">
+                    <img src="assets/img/pergola.png" alt="Restaurante La Pergola">
                     <h3>LA PÉRGOLA RESTAURANTE</h3>
                     <P>El restaurante La Pérgola ofrece un desayuno en una elegante sala privada. Exclusivo para nuestos
                         huéspedes.</P>
@@ -98,7 +113,7 @@
     <!-- Comienza Footer -->
 
     <footer>
-        <img src="img/logo.png" alt="logo" class="footer_logo">
+        <img src="assets/img/logo.png" alt="logo" class="footer_logo">
         <div class="footer_redes">
             <p>Seguinos en nuestras redes</p>
             <a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-instagram"></a>
@@ -108,6 +123,11 @@
     </footer>
 
     <!-- Comienza Scripts -->
+
+    <!-- Bootstrap -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/fb468ee517.js" crossorigin="anonymous"></script>
