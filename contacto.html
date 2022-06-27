@@ -60,7 +60,7 @@
     <!-- Comienza main -->
 
     <main>
-        <div class="portada_contacto">
+        <div class="front_contacto">
             <h1>Contactanos</h1>
         </div>
 
@@ -79,20 +79,56 @@
                 <b>EMAIL:</b>
                 <p>reservas@libertadorhotel.com</p>
             </article>
-            <form action="#" method="get">
-                <input style="width: 223px;" type="text" placeholder="Nombre">
-                <input style="width: 223px;" type="text" placeholder="Apellido"><br><br>
-                <input style="width: 450px;" type="email" placeholder="Email" name="email" required><br><br>
-                <select style="width: 450px">
-                    <option selected>Seleccionar Motivo</option>
-                    <option value="1">Reservar</option>
-                    <option value="2">Reclamos</option>
-                    <option value="3">Otras consultas</option>
-                </select><br><br>
-                <textarea style="width: 450px; height: 118px;" maxlenght="250" placeholder="Comentarios"></textarea><br>
-                <input type="checkbox">Suscribirse al newsteller<br><br>
-                <button type="submit">Enviar</button>
-            </form>
+            <div>
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Apellido">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="email" class="form-control needs-validation" id="exampleFormControlInput1" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select class="custom-select">
+                            <option selected>Seleccionar motivos</option>
+                            <option value="1">Reservar</option>
+                            <option value="2">Quejas</option>
+                            <option value="3">Otras consultas</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Subscribirse al newsletter</label>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Enviar
+                    </button>
+    
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Mensaje</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ¡Tu mensaje ha sido enviado!<br> Te responderemos dentro de las proximas 24hs.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
             </div>
         </section>
     </main>
