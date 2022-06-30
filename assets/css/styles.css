@@ -103,7 +103,7 @@ p {
     text-align: center;
     font-size: 4.5rem;
     clear: left;
-    top: 25rem;
+    top: 50%;
     left: 0;
     right: 0;
     position: absolute;
@@ -252,7 +252,7 @@ p {
     text-align: center;
     font-size: 4.5rem;
     clear: left;
-    top: 15rem;
+    top: 30%;
     left: 0;
     right: 0;
     position: absolute;
@@ -299,7 +299,7 @@ p {
     text-align: center;
     font-size: 4.5rem;
     clear: left;
-    top: 15rem;
+    top: 30%;
     left: 0;
     right: 0;
     position: absolute;
@@ -360,7 +360,7 @@ p {
     text-align: center;
     font-size: 4.5rem;
     clear: left;
-    top: 15rem;
+    top: 30%;
     left: 0;
     right: 0;
     position: absolute;
@@ -421,7 +421,7 @@ p {
     text-align: center;
     font-size: 4.5rem;
     clear: left;
-    top: 15rem;
+    top: 30%;
     left: 0;
     right: 0;
     position: absolute;
@@ -641,7 +641,6 @@ footer img {
 
     .portada_contacto h1 {
         font-size: 3rem;
-        position: sticky;
     }
 
     .formulario {
@@ -662,21 +661,17 @@ footer img {
 
     .portada_bar-rest h1 {
         font-size: 2.3rem;
-        top: 18.5rem;
     }
 
     .front_galeria h1 {
         font-size: 2.3rem;
-        top: 18.5rem;
     }
 
     .front_nosotros h1 {
         font-size: 2.3rem;
-        top: 18.5rem;
     }
 
     .front_contacto h1 {
         font-size: 2.3rem;
-        top: 18.5rem;
     }
 }
